@@ -1,0 +1,125 @@
+/* General Styles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Chat Area */
+  .chat-area {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Chat Message */
+  .chat-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-message {
+    justify-content: flex-end;
+  }
+  
+  .bot-message {
+    justify-content: flex-start;
+  }
+  
+  /* Icons */
+  .user-icon img,
+  .bot-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .message-text {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Specific Styling for Messages */
+  .user-message .message-text {
+    background-color: #d1f1ff;
+    color: #000;
+    border-top-right-radius: 0;
+  }
+  
+  .bot-message .message-text {
+    background-color: #ffffff;
+    color: #000;
+    border-top-left-radius: 0;
+    border: 1px solid #ddd;
+  }
+  
+  /* Input Area */
+  .chat-input {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #3a78c2;
+  }
+  @media screen and (max-width: 768px) {
+    .message-text {
+      max-width: 80%;
+      font-size: 0.9rem;
+    }
+  
+    .user-icon img,
+    .bot-icon img {
+        
+      width: 30px;
+      height: 30px;
+    }
+  
+    .chat-header {
+      font-size: 1.2rem;
+    }
+  }
+    
